@@ -1,0 +1,1 @@
+docker container run --rm --name ubuntu --mount "type=bind,source=C:\Users\M Abdul Aziz\belajar-docker-dasar\backup,destination=/backup" --mount "type=volume,source=mongodatarestore,destination=/data" ubuntu bash -c "cd /data && tar xvf /backup/backup.tar.gz --strip 1"

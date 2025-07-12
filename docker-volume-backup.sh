@@ -1,0 +1,1 @@
+PS C:\Users\M Abdul Aziz\belajar-docker-dasar> docker container run --rm --name nginxbackup --mount "type=bind,source=C:\Users\M Abdul Aziz\belajar-docker-dasar\backup,destination=/backup" --mount "type=volume,source=mongodata,destination=/data" nginx tar cvf /backup/backup.tar.gz /data  
